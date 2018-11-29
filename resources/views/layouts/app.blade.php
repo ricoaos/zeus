@@ -8,8 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    
+    <link rel="shortcut icon" type="image/png" href="" id="favicon" data-original-href="" />
 
-    <title>{{ config('app.name', 'ZEUS-Project One') }}</title>
+
+    <title>ZEUS-Project</title>
 
     <link href="{{ asset('vendor/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('vendor/vendor/metisMenu/metisMenu.min.css') }}" rel="stylesheet">
@@ -37,7 +40,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url('/home') }}">{{ config('app.name', 'Laravel') }}</a>
+                <a class="navbar-brand" href="{{ url('/home') }}">ZEUS-Project</a>
             </div>
 <!-- //////MENU//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
             <!-- /.navbar-header -->
@@ -139,7 +142,7 @@
                                     <a href="{{ url('/cliente') }}">Clientes</a>
                                 </li>
                                 <li>
-                                    <a href="{{ url('/home') }}">Usu√°rios</a>
+                                    <a href="{{ url('/home') }}">Usu·rios</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

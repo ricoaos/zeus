@@ -13,7 +13,6 @@ class ClienteController extends Controller
 
     public function index()
     {
-        $cliente = Cliente::all();   
-        return "teste";
+        return view('/cadastro/cliente');
     }
 }
