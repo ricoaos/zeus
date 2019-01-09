@@ -16,8 +16,12 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('cliente', 'ClienteController@index');
-Route::get('fornecedor', 'FornecedorController@index');
-Route::get('funcionario', 'FuncionarioController@index');
+
+//Cadastros
+Route::get('cliente', 'Cadastro\ClienteController@index');
+Route::get('fornecedor', 'Cadastro\FornecedorController@index');
+Route::get('funcionario', 'Cadastro\FuncionarioController@index');
+
+//Produtos
+Route::get('gerenciarProduto', 'GerenciarprodutoController@index');

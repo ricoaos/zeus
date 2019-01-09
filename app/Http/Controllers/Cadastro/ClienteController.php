@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Cadastro;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class FornecedorController extends Controller
+class ClienteController extends Controller
 {
     public function __construct()
     {
@@ -13,6 +14,6 @@ class FornecedorController extends Controller
 
     public function index()
     {
-        return view('/cadastro/fornecedor');
+        return view('/cadastro/cliente');
     }
 }
